@@ -13,5 +13,7 @@
         "niko",
         "Parikh",
         "werkzeug"
-    ]
+    ],
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.typeCheckingMode": "basic"
 }
