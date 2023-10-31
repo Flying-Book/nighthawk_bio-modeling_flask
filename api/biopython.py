@@ -80,7 +80,7 @@ class BioPythonAPI:
 
 if __name__ == "__main__":
     # Modify your test code as needed
-    server = ""  # Replace with your server URL
+    server = "http://127.0.0.1:8006"  # Replace with your server URL
     url = server + "/api/biopython"
     responses = []  # Responses list
 

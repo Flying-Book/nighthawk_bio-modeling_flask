@@ -12,7 +12,7 @@ from model.players import initPlayers
 from api.joke import joke_api # Blueprint import api definition
 from api.user import user_api # Blueprint import api definition
 from api.player import player_api
-
+from api.biopython import biopython_api
 
 # setup App pages
 from projects.projects import app_projects # Blueprint directory import projects definition
@@ -25,7 +25,8 @@ db.init_app(app)
 app.register_blueprint(joke_api) # register api routes
 app.register_blueprint(user_api) # register api routes
 app.register_blueprint(player_api)
-app.register_blueprint(app_projects) # register app pages
+app.register_blueprint(app_projects)
+app.register_blueprint(biopython_api) # register app pages
 
 @app.errorhandler(404)  # catch for URL not found
 def page_not_found(e):
